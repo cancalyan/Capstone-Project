@@ -1,0 +1,41 @@
+{% extends "food/base.html" %}
+
+{% block content %}
+
+<style>
+    body {
+        background: linear-gradient(135deg,#71b7e6,#9b59b6);
+        font-family: sans-serif;
+    }
+
+    .partners {
+        border: 1px solid #000;
+        border-radius: 25px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .partners h2 {
+        margin-top: 0;
+    }
+</style>
+
+<section>
+    <h1 style="text-align: center; color: #fff; font-size: 30px;">Our Partners</h1>
+    <!-- Add content about your partners here -->
+    <div class="partners">
+        <h2>Partner Company 1</h2>
+        <p>Description of Partner Company 1</p>
+    </div>
+    <div class="partners">
+        <h2>Partner Company 2</h2>
+        <p>Description of Partner Company 2</p>
+    </div>
+    <div class="partners">
+        <h2>Partner Company 3</h2>
+        <p>Description of Partner Company 3</p>
+    </div>
+    <!-- Add more partner company divs as needed -->
+</section>
+
+{% endblock content %}

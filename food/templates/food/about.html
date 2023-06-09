@@ -1,0 +1,147 @@
+{% extends "food/base.html" %}
+
+{% block content %}
+<head>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body,
+        h1,
+        p,
+        div,
+        table,
+        tr,
+        td {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        #page-7{
+            background-color: #fefefe;
+            height: auto;
+        }
+
+        #page-7-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .circle-icon {
+            width: 150px;
+            height: 150px;
+            background-color: #fefefe;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .circle-icon > div{
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #page-8{
+            background-color: #242582;
+        }
+
+        #page-8-text {
+            position: relative;
+        }
+
+        .contact-info {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-align: right;
+        }
+
+        .contact-info h1,
+        .contact-info p {
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+
+        .contact-info h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            margin-right: 150px;
+        }
+
+        .contact-info p {
+            text-align: center;
+            font-size: 50px;
+            color: #f974a6;
+            margin-right: 150px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section id="page-7">
+        <div id="page-7-text" class="text-container">
+            <h1 style="font-family: sans-serif;color: #004b84; font-size: 40px; margin-bottom: 10px; margin-right: 150px;">
+                Acknowledgements</h1>
+            <p style="font-family: sans-serif;color: #004b84; font-size: 30px; text-align: center;">Most reports conclude
+                with a page acknowledging the contributions of the <br>people who worked tirelessly on the
+                projects mentioned within. Below, list <br>down the names of those committed to these projects, such as:</p>
+        </div>
+
+        <div id="contributors">
+            <div class="image-container">
+                <div class="circle-icon">
+                    <div>Abdullah Enes Sağır</div>
+                </div>
+
+                <div class="circle-icon">
+                    <div>Özgür Ateş</div>
+                </div>
+
+                <div class="circle-icon">
+                    <div>Mahmut Can Çalyan</div>
+                </div>
+
+                <div class="circle-icon">
+                    <div>Ayça Demircan</div>
+                </div>
+
+                <div class="circle-icon">
+                    <div>Ömer Efe Eroluş</div>
+                </div>
+
+                <div class="circle-icon">
+                    <div>Emre Güler</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="page-8">
+        <div id="page-8-text" class="text-container">
+            <img src="https://sleepyenes.my.canva.site/enes-sleepwalk-ng-kopyas/videos/18a627afe7982b6e6fe43f19b02947ce.gif"
+                loading="lazy" style="height: 800px; margin-left: 100px;">
+
+            <div class="contact-info">
+                <h1>Contact Information</h1>
+                <p>+123-456-7890<br>hello@reallygreatsite.com<br>123 Anywhere St., Any City<br>www.reallygreatsite.com</p>
+            </div>
+        </div>
+    </section>
+</body>
+{% endblock content %}
+
