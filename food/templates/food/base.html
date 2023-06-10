@@ -12,7 +12,7 @@
   <title>FoodQuality</title>
   <style>
     body {
-      background-color: #242582;
+      background-color: #333333 ;
       font-family: sans-serif;
     }
 
@@ -22,22 +22,15 @@
       justify-content: flex-end;
       align-items: center;
       margin-bottom: 50px;
-    }
-
-    .navbar-nav .nav-item {
-      margin-left: 10px;
-      margin-bottom: 30px;
-      
+      height: 0px;
     }
 
     .navbar-nav .nav-link {
       margin: 30px;
       font-size: 30px;
-      text-decoration: none;
       color: #000;
-      list-style-type: none;
-      color: #fefefe;
-      /* Remove the dot */
+      text-decoration: none;
+      color: #FFFFFF ;
     }
     
 
@@ -51,7 +44,7 @@
       <div class="container" id="newNavbar">
         <a class="navbar-brand mr-4" href="/" style="font-size: 40px; color: #F64C72; margin-left: 20px;">
           <img src="{% static 'food/images/solution-harvest-low-resolution-logo-color-on-transparent-background.png' %}"
-            style="width: 700px; height: 200px; margin-top: 20px;">
+            style="width: 350px; height: 100px; margin-top: 20px; margin-left: 50px;">
         </a>
         <!--
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
@@ -61,7 +54,7 @@
         </button>
         -->
         <div class="collapse navbar-collapse" id="navbarToggle">
-          <div class="navbar-nav ml-auto">
+          <div class="navbar-nav">
             <div class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </div>

@@ -16,7 +16,7 @@ td {
 }
 
 #page-1 {
-    background-color: #242582;
+    background-color: #F9F9F9;
 }
 
 #header {
@@ -39,18 +39,18 @@ td {
     font-size: 100px;
     font-weight: bold;
     font-family: sans-serif;
-    color: #fefefe;
+    color: #2766cc;
 }
 
 .header-text {
     font-size: 35px;
     margin-top: 10px;
     font-family: sans-serif;
-    color: #fefefe;
+    color: #333333;
 }
 
 #page-2 {
-    background-color: #242582;
+    background-color: #F9F9F9;
 }
 
 #overview {
@@ -75,7 +75,7 @@ td {
     text-align: center;
     font-family: sans-serif;
     font-size: 18px;
-    color: #004b84;
+    color: #333333;
 }
 
 #page-3-graph {
@@ -144,7 +144,7 @@ th {
 }
 
 #step-boxes>div {
-    background-color: #fefefe;
+    background-color: #F9F9F9;
     flex: 1;
     padding: 20px;
     margin: 10px;
