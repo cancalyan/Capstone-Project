@@ -36,14 +36,17 @@
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <fieldset class="form-group">
-                    <legend class="border-bottom mb-4">Upload Image</legend>
+                    <legend class="border-bottom mb-4">Upload Images</legend>
                     <!-- Add this input field for the image -->
                     <div class="form-group">
                         <input type="file" name="image" accept="image/*" multiple>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary" type="submit">Upload Image</button>
+                        <button class="btn btn-primary" type="submit">Upload Images</button>
                     </div>
+                    <form action="{% url 'download_price_data' %}" method="get">
+                        <a href="{% url 'download_price_data' %}">Download Price Data</a>
+                    </form>
                 </fieldset>
             </form>
             {% if analysis_result %}

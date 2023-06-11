@@ -4,24 +4,37 @@
 <html>
 
 <head>
+    {% load static %}
+
     <style>
         body {
             background-color: #A5D8DD;
+        }
+
+        #images{
+            display: flex;
+            flex-direction: row;
         }
     </style>
 </head>
 
 <body>
     <h1>{{ user.username }}'s Past Results</h1>
+    <div id="images">
+        <img src="{% static 'food/images/plot.png' %}" alt="Plot Image">
+        <img src="{% static 'food/images/pie.png' %}" alt="Pie Image">
+    </div>
+    <!-- 
     {% for post in posts %}
     <div id="res">
         <img src="{{ post.image.url }}" alt="Image" style="width: 100px; height: 100px;">
-        <p>Prediction: {{ post.prediction }}</p>
-        <p>Date posted: {{ post.date_posted }}</p>
+       <p>Prediction: {{ post.prediction }}</p>
+        <p>Topsis: {{ post.topsis_score }}</p>
     </div>
     {% empty %}
     <p>No past results.</p>
     {% endfor %}
+-->
 </body>
 
 </html>

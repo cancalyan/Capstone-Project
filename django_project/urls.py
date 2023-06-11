@@ -21,16 +21,19 @@ from users import views as user_views
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name="register"),
     path('profile/', user_views.profile, name="profile"),
+    path('download/', user_views.download_price_data, name='download_price_data'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name="login"),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name="logout"),
     path('', include('food.urls')),
     path('past_results/', user_views.past_results, name='past_results')
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-if settings.DEBUG: # only serve static files from Django during development
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:  # only serve static files from Django during development
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)

@@ -127,7 +127,7 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Media files (Uploaded by users)
-MEDIA_ROOT = r'C:\Users\zgrts\OneDrive\Desktop\Azure-master\media'
+MEDIA_ROOT = r'C:\Users\zgrts\OneDrive\Desktop\Azure-master\Capstone-\food\static\food\images'
 MEDIA_URL = '/media/'
 
 
